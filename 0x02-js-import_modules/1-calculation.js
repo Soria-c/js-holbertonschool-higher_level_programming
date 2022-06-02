@@ -13,7 +13,7 @@ function main() {
   let b = 5;
 
   for (let k in f) {
-    console.log(`${k} ${f[k](a, b)}`)
+    console.log(`${a} ${k} ${b} = ${f[k](a, b)}`)
   }
 }
 
