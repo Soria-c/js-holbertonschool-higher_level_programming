@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 function replaceInArray(myArray, index, element) {
-  if (index > myArray.length || index < 0) {
+  if (index > myArray.length - 1 || index < 0) {
     return myArray
   }
   myArray[index] = element
@@ -9,7 +9,7 @@ function replaceInArray(myArray, index, element) {
 }
 
 let array = [1, 2, 3, 4, 5];
-let idx = 3;
+let idx = 5;
 let newElement = 9;
 let newArray = replaceInArray(array, idx, newElement)
 
