@@ -3,7 +3,7 @@
 function onlyDiffElements(set1, set2) {
   let dif1 = Array.from(set1).filter((x) => !set2.has(x));
   let dif2 = Array.from(set2).filter((x) => !set1.has(x))
-  return new Set(dif1.concat(dif2))
+  return new Set([...dif1, ...dif2])
 } 
 
 
